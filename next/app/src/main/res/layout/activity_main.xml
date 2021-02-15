@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/lemon"
+        android:elevation="6dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="next="
+            android:textColor="#000"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="1dp"
+            android:background="#AAA6A6A6"
+            android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/todo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@color/none"
+            android:gravity="center"
+            android:text="晾衣服"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/is_done"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:layout_toLeftOf="@id/status"
+            android:background="@drawable/is_done_button" />
+
+        <ImageButton
+            android:id="@+id/status"
+            android:layout_width="32dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/status_normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="1dp"
+            android:background="#AAA6A6A6" />
+
+        <Button
+            android:id="@+id/todo1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@color/none"
+            android:gravity="center"
+            android:text="力扣每日一题"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/is_done1"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:layout_toLeftOf="@id/status1"
+            android:background="@drawable/is_done_button" />
+
+        <ImageButton
+            android:id="@+id/status1"
+            android:layout_width="32dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/status_emergency" />
+
+    </RelativeLayout>
+</LinearLayout>
